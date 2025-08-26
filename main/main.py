@@ -35,9 +35,9 @@ def pridobitev_podatkov1():
 
 podatki = []
 def pridobitev_podatkov2():
-    urls = [knjiga.link for knjiga in knjige]
+    urls = [(knjiga.link, knjiga.naslov) for knjiga in knjige]
     i=0
-    for url in urls:
+    for url, naslov in urls:
         resp = requests.get(url)
         soup = BeautifulSoup(resp.content, "html.parser")
 
@@ -77,6 +77,7 @@ def pridobitev_podatkov2():
         downloads = downloads[:-31]
 
         podatki.append({
+            "title": naslov, 
             "url": url,
             "author": knjige[i].avtor,
             "release_date": release_date,
