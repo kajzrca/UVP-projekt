@@ -1,1 +1,3 @@
 # UVP-projekt
+
+Za projektno nalogo pri UVP bom izvedela analizo knjig s pomočjo programa main.py, ki zbere podatke s spleta. Scraper shrani ključne informacije o knjigah, kot so naslov (title), spletni naslov (url), avtor (author), leto izida (release_date), jezik (language), bralska zahtevnost (reading_level) ter število prenosov v zadnjih 30 dneh (downloads_last_30d). Na osnovi teh podatkov bom raziskala pogostost jezikov, najpogostejše bralne ravni, trende izdaj skozi čas ter povezavo med priljubljenostjo knjig in njihovimi značilnostmi. Namen naloge je pokazati, kako lahko s programiranjem obdelujemo resnične podatke in iz njih izluščimo vzorce, ki razkrivajo bralne navade uporabnikov.
